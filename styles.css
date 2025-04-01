@@ -1,8 +1,8 @@
 .team-name-ja {
-    font-size: 0.8rem; /* 日本語は大きめ */
+    font-size: 1.5rem; /* 日本語は大きめ */
 }
 
 .team-name-en {
-    font-size: 0.9rem; /* 英語は小さく */
+    font-size: 1rem; /* 英語は小さく */
     display: block; /* 改行を有効にする */
 }
