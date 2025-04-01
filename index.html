@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麗澤ロボットデモ隊</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <h1 class="m-0">
+                    <span class="team-name-ja">麗澤ロボットデモ隊</span><br>
+                    <span class="team-name-en"><span style=color:red;>R</span>eitaku <span style=color:red;>R</span>obot <span style=color:red;>D</span>emo</span>
+                </h1>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">紹介</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#robots">ロボット</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#schedule">スケジュール</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="robots" class="mb-4">
+        <div id="robotCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/image1.jpg" class="d-block w-100 img-fluid h-auto" alt="ロボット1">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/image2.jpg" class="d-block w-100 img-fluid h-auto" alt="ロボット2">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/image3.jpg" class="d-block w-100 img-fluid h-auto" alt="ロボット3">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#robotCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">前へ</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#robotCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">次へ</span>
+            </button>
+        </div>
+    </section>
+    
+
+    
+    <div class="container mt-4">
+        <section id="about" class="mb-4">
+            <h2><i class="bi bi-question-circle-fill"></i>麗澤ロボットデモ隊とは？</h2>
+            <p>Reitaku Robot Demo team（通称：RRD）は、千葉県柏市<a href="https://www.reitaku-u.ac.jp/" target="_blank">麗澤大学</a>工学部で2024年発足した学生向け課外活動団体です。<br>自分たちで研究・開発したロボットや、すでに大学にあるロボット・モビリティを操作し、オープンキャンパスや学外イベントでデモを行っています。</P>
+        </section>
+
+        <section id="join" class="mb-4">
+            <h2><i class="bi bi-person-raised-hand"></i>見学・体験と入隊希望はこちらから！</h2>
+            <a href="https://forms.gle/Dumwqeiz8KxJFwLh9" target="_blank">
+                <img src="img/button.png" alt="見学・体験と入隊希望フォーム" class="img-fluid">            </a>
+            <p>上のフォームから見学・体験または入隊希望をお知らせください。画像クリックでフォームへ飛びます。<br><strong>※麗澤大学のアカウントでのみ、アクセスできます。アクセスできない方や、その他のご用件の方はメールへ直接ご連絡ください。</strong></p>
+
+        </section>
+        
+        <section id="robots" class="mb-4">
+            <h2><i class="bi bi-box-fill"></i>主なデモ・研究分野</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/AgileX.jpg" class="card-img-top" alt="ロボット1">
+                        <div class="card-body">
+                            <h5 class="card-title">■モビリティ系</h5>
+                            <p class="card-text"><strong><a href="https://techshare.co.jp/product/agilex/">AgileX Robotic</a></strong><br> (BUNKER・SCOUT MINI・TRACER・HUNTER・LIMO) <br><strong><a href="https://toyota.jp/cwalkt/">TOYOTA</a></strong><br>(C+Walk T)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/arm.jpg" class="card-img-top" alt="ロボット2">
+                        <div class="card-body">
+                            <h5 class="card-title">■アームロボット系</h5>
+                            <p class="card-text"><strong><a href="https://jp.dobot-robots.com/">Dobot Robotics</a></strong><br> (MG400・Magician) <br><strong><a href="https://www.universal-robots.com/ja/products/ur5e/">Universal Robots</a></strong><br>(Ur5e)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/human.jpg" class="card-img-top" alt="ロボット3">
+                        <div class="card-body">
+                            <h5 class="card-title">■犬・人型ロボット系</h5>
+                            <p class="card-text"><strong><a href="https://techshare.co.jp/product/unitree/go1/">Unitree</a></strong><br> (Go1) <br><strong><a href="https://kondo-robot.com/product-category/robot/khrseries">近藤化学</a></strong><br>(KHR)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/ivent-wait.png" class="card-img-top" alt="ロボット3">
+                        <div class="card-body">
+                            <h5 class="card-title">■3Dプリンタ系</h5>
+                            <p class="card-text">掲載準備中...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="mb-4">
+            <h2><i class="bi bi-calendar-check-fill"></i>デモスケジュール</h2>
+            <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                <img src="img/ivent.JPG" class="card-img-top" alt="イベント1">
+                <div class="card-body">
+                    <h5 class="card-title">◎オープンキャンパス(4/27,5/25,6/15)</h5>
+                    <p class="card-text">麗澤大学のオープンキャンパスにてデモを行います！<br>ぜひお越しください。 下記サイトより予約ができます。</p>
+                    <a href="https://www.reitaku-u.ac.jp/admissions/opencampus/" class="btn btn-primary">詳細を見る</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                <img src="img/ivent-wait.png" class="card-img-top" alt="イベント2">
+                <div class="card-body">
+                    <h5 class="card-title">◎Coming soon</h5>
+                    <p class="card-text">詳細をお待ちください。</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="mb-4">
+            <h2><i class="bi bi-envelope-plus-fill"></i>問い合わせ</h2>
+            <div class="container mt-5">
+                <div class="card">
+                    <div class="card-header">
+                    <h2>代表連絡先</h2>
+                    </div>
+                    <div class="card-body"></div>
+                    <p class="card-text"><i class="bi bi-person-circle"></i><b>デモ隊代表</b></p>
+                    <img src="img/kumagai.jpg" alt="熊谷 柊志" style="width: 150px; height: auto;">
+                    <p class="card-text"><strong>名前:</strong> 熊谷 柊志</p>
+                    <p class="card-text"><strong>メールアドレス:</strong> a240374t@reitaku.jp</p>
+                    <p class="card-text"><strong>学部:</strong> 工学部</p>
+                    <p class="card-text"><strong>専攻:</strong> 情報システム工学</p>
+                    <p class="card-text"><strong>年生:</strong> 2年生</p>
+                    </div>
+                    
+                </div>
+        </section>
+        
+    </div>
+
+    <button onclick="scrollToTop()" class="btn btn-primary position-fixed" style="bottom: 20px; right: 20px; z-index: 1000; border-radius: 50%; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center;">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 麗澤ロボットデモ隊</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
