@@ -9,18 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="styles-s.css">
     <script src="script.js"></script>
-    <script>
-        const now = new Date();
-        const hour = now.getHours(); // 現在の時間（0〜23）
-      
-        if (hour >= 6 && hour < 24) {
-          // 朝（6時〜0時未満）
-          window.location.href = "index-s.html";
-        } else {
-          // それ以外（夜）
-          window.location.href = "maintenance-s.html";
-        }
-      </script>
 </head>
 <body>
     <header class="bg-dark text-white py-3">
