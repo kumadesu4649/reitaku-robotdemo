@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG400 ロボットマニュアル</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to shared CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(90deg, #343a40, #495057);
+        }
+        h1, h2 {
+            font-weight: bold;
+        }
+        .main-content img {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <h1 class="m-0">
+                    <span class="team-name-ja">麗澤ロボットデモ隊</span><br>
+                    <span class="team-name-en"><span style="color:red;">R</span>eitaku <span style="color:red;">R</span>obot <span style="color:red;">D</span>emo</span>
+                </h1>
+            </div>
+        </div>
+    </header>
+    <div class="alert alert-danger text-center" role="alert">
+        <p><i class="bi bi-exclamation-triangle-fill"></i> <strong>注意！MacユーザーはMG400のソフトを起動できません。Windowsユーザーのみロボットを操作できます。</strong></p>
+    </div>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="text-center my-4">
+                <img src="img/MG400_1.JPG" class="img-fluid" alt="MG400 ロボット" style="max-width: 60%; height: auto;">
+            </div>
+            <h1 class="text-center">MG400 ロボットマニュアル</h1>
+            <p class="text-center">このマニュアルは、MG400ロボットの使用方法と安全ガイドラインを説明します。</p>
+
+            <section class="section">
+                <h2>1. 安全上の注意</h2>
+                <div class="alert alert-warning" role="alert">
+                    <p><i class="bi bi-exclamation-triangle-fill"></i> <strong>ロボットを操作する際は、以下の安全ガイドラインを守ってください。</strong></p>
+                    <ul>
+                        <li>ロボットの動作範囲内に、人や支障物が入らないようにしてください。</li>
+                        <li>電源を切る際は、必ず指定された手順に従ってください。</li>
+                        <li>緊急停止ボタンの位置を事前に確認してください。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="mt-4">2-1. アームのセットアップ手順</h2>
+                <p class="fs-5">以下の手順に従って、ロボットをセットアップしてください。</p>
+                <ol class="fs-5">
+                    <li>ロボットを安定した平面に設置します。</li>
+                    <li>
+                        コンセントに刺した電源ケーブルをアーム本体に接続し、電源スイッチをONにします。
+                        <strong>（MG400のランプが、青色に変わったら起動完了）</strong>
+                        <div class="text-center my-3">
+                            <img src="img/pw.jpg" class="img-fluid" alt="MG400 ロボットのセットアップ" style="max-width: 45%; height: auto;">
+                            <img src="img/lamp.png" class="img-fluid" alt="MG400 ロボットのセットアップ" style="max-width: 45%; height: auto;">
+                        </div>
+                    </li>
+                    <li>
+                        吸盤用のコンプレッサーの電源もONにします。
+                        <div class="text-center my-3">
+                            <img src="img/pwa.jpg" class="img-fluid" alt="MG400 ロボットのセットアップ" style="max-width: 45%; height: auto;">
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="section">
+                <h2 class="mt-4">2-2. PCセットアップ手順</h2>
+                <p class="fs-5">以下の手順に従って、PCをセットアップしてください。</p>
+                <ol class="fs-5">
+                    <li>
+                        事前に以下のボタンから、MG400を制御するソフトをダウンロードしてください。
+                        <br>
+                        <a href="dl/DobotStudioPro.exe" class="btn btn-primary" role="button" download>
+                            <i class="bi bi-download"></i> DobotStudioをダウンロードする
+                        </a>
+                    </li>
+                    <li>
+                        Windowsの右下にあるWifiマークを選択し、<strong>アームに貼ってある機体番号</strong>と同じ番号のWifiに接続します。
+                        <details>
+                            <summary>パスコードはこちら</summary>
+                            1234567890
+                        </details>
+
+                        <div class="text-center my-3">
+                            <img src="img/wifi.jpg" class="img-fluid" alt="MG400 ロボットのセットアップ" style="max-width: 45%; height: auto;">
+                        </div>
+                        DobotStudioを起動し、MG400を接続します。
+                        <div class="text-center my-3">
+                            <img src="img/MG400.png" class="img-fluid" alt="MG400 ロボットのセットアップ" style="max-width: 45%; height: auto;">
+                        </div>
+                    </li>
+                    <li>
+                        ここまでで接続できない場合は、<a href="#help">ヘルプ</a>を参照してください。
+                    </li>
+                </ol>
+            </section>
+
+            <section class="section">
+                <h2 class="mt-4">3. DobotStudioの操作方法</h2>
+                <p class="fs-5">DobotStudioはMG400を操作・プログラムするソフトです！</p>
+                <ol class="fs-5">
+                    <alert class="alert alert-danger" role="alert"><i class="bi bi-exclamation-triangle-fill"></i><strong>ロボットを動かす際は、動作範囲を確認し、障害物がないことを確認してください。</strong></alert>
+                <ol>
+                    <div class="text-center my-3">
+                    <img src="img/guide.png" class="img-fluid" alt="Dobotの基本" style="max-width: 80%; height: auto;">
+                    </div>
+                    <li>イネーブルスイッチで固定を解除しましょう。</li>
+                    <li>コントロールから試しに、ロボットを手動で動かしてみましょう。</li>
+                    <li>I/Oを押して、DO-01をオンオフしてみよう。（吸盤の吸い込み）</li>
+                    <li>I/Oを押して、DO-02をオンオフしてみよう。（吸盤の吸い出し）</li>
+                </ul>
+            </section>
+           
+            <section class="section">
+                <h2 class="mt-4">4. 使用を終了するとき</h2>
+                <p class="fs-5">以下の手順に従って、ロボットをシャットダウンしてください。</p>
+                <ol class="fs-5">
+                    <li>コントロールからロボットを手動で動かして、アームを調整しましょう</li>
+                    <li>イネーブルスイッチで固定かけましょう。</li>
+                    <li>最後に、MG400との接続を切断し、MG400本体の電源を切る</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2 class="mt-4">5.ヘルプ</h2>
+                <p class="fs-5">ロボットが動かない！接続できないときの対処法</p>
+                <ol class="fs-5">
+                    <li>コントロールからロボットを手動で動かして、アームを調整しましょう</li>
+                    <li>イネーブルスイッチで固定かけましょう。</li>
+                    <li>最後に、MG400との接続を切断し、MG400本体の電源を切る</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 麗澤ロボットデモ. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html></div></section>
