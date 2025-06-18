@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="img/robot.svg">
+    <title>麗澤ロボットデモ隊</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Noto+Sans+JP:wght@500;400&display=swap">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, #232526 0%, #414345 100%);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .team-name-ja {
+            color:#e0e7ef;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        .team-name-en {
+            color: #f09819;
+            font-size: 1.1rem;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.1em;
+        }
+        nav .nav-link {
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav .nav-link:hover {
+            color: #ffc107 !important;
+        }
+        .alert-danger {
+            background: linear-gradient(90deg, #ff5858 0%, #f09819 100%);
+            color: #fff;
+            border: none;
+            border-radius: 1rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(255,88,88,0.08);
+            margin-left: 2rem;
+            min-width: 320px;
+        }
+        .carousel {
+            border-radius: 1.2rem;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+            margin-bottom: 2rem;
+        }
+        .carousel-inner img {
+            object-fit: cover;
+            height: 340px;
+        }
+        h2 {
+            font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1a237e;
+        }
+        .card {
+            border: none;
+            border-radius: 1.2rem;
+            box-shadow: 0 2px 12px rgba(30,64,175,0.07);
+            transition: transform 0.2s;
+            margin-bottom: 2rem;
+        }
+        .card:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 8px 24px rgba(30,64,175,0.13);
+        }
+        .card-title {
+            color: #0d47a1;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        .card-img-top {
+            border-top-left-radius: 1.2rem;
+            border-top-right-radius: 1.2rem;
+            object-fit: cover;
+            height: 180px;
+        }
+        .btn-primary, .btn-secondary {
+            border-radius: 2rem;
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            letter-spacing: 0.05em;
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+            border: none;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+        }
+        .btn-secondary {
+            background: #bdbdbd;
+            border: none;
+            color: #333;
+        }
+        #join img {
+            max-width: 220px;
+            margin: 1rem 0;
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px rgba(30,64,175,0.07);
+            transition: box-shadow 0.2s;
+        }
+        #join img:hover {
+            box-shadow: 0 8px 24px rgba(30,64,175,0.13);
+        }
+        #contact .card {
+            max-width: 420px;
+            margin: 0 auto;
+            background: #f5f7fa;
+        }
+        #contact img {
+            border-radius: 50%;
+            margin: 1rem 0;
+            border: 3px solid #1a237e;
+        }
+        footer {
+            background: linear-gradient(90deg, #232526 0%, #414345 100%);
+            color: #fff;
+            font-size: 1rem;
+            letter-spacing: 0.05em;
+        }
+        @media (max-width: 991px) {
+            .alert-danger {
+                margin-left: 0;
+                margin-top: 1rem;
+                min-width: unset;
+            }
+            .carousel-inner img {
+                height: 200px;
+            }
+        }
+        @media (max-width: 767px) {
+            .team-name-ja {
+                font-size: 1.3rem;
+            }
+            .team-name-en {
+                font-size: 0.9rem;
+            }
+            .carousel-inner img {
+                height: 140px;
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+    <header class="py-3">
+        <div class="container d-flex flex-column justify-content-center align-items-center text-center">
+            <div>
+                <h1 class="m-0">
+                    <span class="team-name-ja">麗澤ロボットデモ隊</span><br>
+                    <span class="team-name-en"><span style="color:#ff5252;">R</span>eitaku <span style="color:#ff5252;">R</span>obot <span style="color:#ff5252;">D</span>emo</span>
+                </h1>
+                <div class="d-flex justify-content-center align-items-center mt-2">
+                    <span class="badge bg-secondary" style="font-size:1rem; vertical-align:middle;">ポータルサイト</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="row justify-content-center g-4">
+            <div class="col-6 col-md-3">
+                <strong>
+                <a href="https://forms.gle/QWX9fgfLevezPTXGA" target="_blank" class="btn btn-success w-100 d-flex flex-column align-items-center py-4" style="height: 180px; text-decoration: none;">
+                    <i class="bi bi-sun" style="font-size:2.5rem;"></i>
+                    <span class="mt-2">オープン<br>キャンパス<br><span style="font-size:1.5em;">登録</span></span>
+                </a>
+            </strong>
+            </div>
+            <div class="col-6 col-md-3">
+                <strong>
+                <a href="https://forms.gle/FLGaRhACZPceBtjk7" target="_blank" class="btn btn-success w-100 d-flex flex-column align-items-center py-4" style="height: 180px; text-decoration: none;">
+                    <i class="bi bi-sun-fill" style="font-size:2.5rem;"></i>
+                    <span class="mt-1">オープン<br>キャンパス<br><span style="font-size:1.5em;">振り返り</span></span>
+                </a>
+            </strong>
+            </div>
+            <div class="col-6 col-md-3">
+                <strong>
+                <a href="https://forms.gle/17gHWN851vSKPR9g6" target="_blank" class="btn btn-warning w-100 d-flex flex-column align-items-center py-4" style="height: 180px; text-decoration: none;">
+                    <i class="bi bi-bank" style="font-size:2.5rem;"></i>
+                    <span style="font-size:1.5em;">精算</span><span class="mt-1">ロボット<br>デモ隊<br></span>
+                </a>
+            </strong>
+            </div>
+            <div class="col-6 col-md-3">
+                <strong>
+                <a href="https://forms.gle/2ZwBjcw3XuP39uXJ7" target="_blank" class="btn btn-warning w-100 d-flex flex-column align-items-center py-4" style="height: 180px; text-decoration: none;">
+                    <i class="bi bi-people" style="font-size:2.5rem;"></i>
+                    <span style="font-size:1.3em;">体験・参加</span><span class="mt-1">ロボット<br>デモ隊<br></span>
+                </a>
+            </strong>
+            </div>
+            <div class="col- col-md-3">
+                <strong>
+                <a href="https://drive.google.com/drive/folders/1HIIoCd5FJ0m9dGBF8jmgGMlKfpjADgNE?usp=drive_link" target="_blank" class="btn btn-secondary w-100 d-flex flex-column align-items-center py-4" style="height: 180px; text-decoration: none;">
+                    <i class="bi bi-people" style="font-size:2.5rem;"></i>
+                    <span style="font-size:1.3em;">管理者ドライブ</span><span class="mt-1">アクセスには<br>権限が必要<br></span>
+                </a>
+            </strong>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <button onclick="scrollToTop()" class="btn btn-primary position-fixed" style="bottom: 20px; right: 20px; z-index: 1000; border-radius: 50%; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center;">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    
+    <footer class="text-center py-3">
+        <p>&copy; 2025 麗澤ロボットデモ隊</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
